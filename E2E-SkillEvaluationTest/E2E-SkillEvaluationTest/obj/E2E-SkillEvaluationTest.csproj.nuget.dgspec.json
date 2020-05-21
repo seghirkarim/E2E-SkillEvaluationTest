@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karim\\source\\repos\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj": {}
+    "C:\\Users\\Karim\\Desktop\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karim\\source\\repos\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj": {
+    "C:\\Users\\Karim\\Desktop\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karim\\source\\repos\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj",
+        "projectUniqueName": "C:\\Users\\Karim\\Desktop\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj",
         "projectName": "E2E-SkillEvaluationTest",
-        "projectPath": "C:\\Users\\Karim\\source\\repos\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj",
+        "projectPath": "C:\\Users\\Karim\\Desktop\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj",
         "packagesPath": "C:\\Users\\Karim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karim\\source\\repos\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\obj\\",
+        "outputPath": "C:\\Users\\Karim\\Desktop\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Karim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
