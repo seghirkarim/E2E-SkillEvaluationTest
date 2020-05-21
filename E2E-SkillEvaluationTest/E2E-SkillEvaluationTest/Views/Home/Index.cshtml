@@ -1,8 +1,74 @@
-﻿@{
+﻿@model IEnumerable<Todo>
+@{
     ViewData["Title"] = "Home Page";
 }
+<h1 class="display-4">My To-do list</h1>
+<hr />
+<table id="dataTable" class="table table-striped" style="min-width:100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Finished</th>
+            <th></th>
+            <th>@Html.ActionLink("Add To-do", "Create", "Todo", new { @class = "btn btn-primary", @style = "color:white", @role = "button" })</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            await Html.RenderPartialAsync("_TodoListItem", item);
+        }
+    </tbody>
+</table>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<script>
+    var dataTable
+
+    $(document).ready(function () {
+        dataTable = $('#dataTable').DataTable({
+            "columnDefs": [
+                {
+                    "targets": [3,4],
+                    orderable: false
+                },
+            ]
+        });
+    });
+
+    $('#dataTable tbody').on('click', '.markFinished', function () {
+        var button = $(this);
+        var Id = $(this).val();
+        if (confirm("This Todo will be marked as finished!")) {
+            $.ajax({
+                url: "/Todo/MarkFinished/" + Id,
+                type: "Get"
+            }).done(function () {
+                button.replaceWith('<span class="badge badge-success">Finished</span>');
+            }).fail(function () {
+                alert("Something Went Wrong.");
+            });
+        }
+    });
+
+    $('#dataTable tbody').on('click', '.delete', function () {
+        var button = $(this);
+        var Id = $(this).val();
+        if (confirm("This Todo will be deleted!")) {
+            $.ajax({
+                url: "/Todo/Delete/" + Id,
+                type: "Get"
+            }).done(function () {
+                var pageNumber = dataTable.page.info().page
+                dataTable
+                    .row($(button).parents("tr"))
+                    .remove()
+                    .page(pageNumber)
+                    .draw('page');
+            }).fail(function () {
+                alert("Something Went Wrong.");
+            });
+        }
+    });
+</script>
+

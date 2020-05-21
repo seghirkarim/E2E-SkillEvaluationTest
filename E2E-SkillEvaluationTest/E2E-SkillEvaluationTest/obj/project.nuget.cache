@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RB83Y/WIXML8OobgJmd4NB0Z009MdygHXbRXqrdi3Hzf/GGmqrR6zjTi9ziR6XU69jPp0b4ksEgmlfnC+uVidg==",
+  "dgSpecHash": "TJulZR4HW5d2U6MfoJN/T4GgyaezKT2ev1UxllXC/alBZNLAUOVApAdZQese6N4A0GGiYnNr4bU4kQ99axICZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Karim\\Desktop\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest\\E2E-SkillEvaluationTest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Karim\\.nuget\\packages\\aspnetcore.paginatedlist\\6.0.0\\aspnetcore.paginatedlist.6.0.0.nupkg.sha512",
     "C:\\Users\\Karim\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Karim\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Karim\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

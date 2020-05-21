@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "AspNetCore.PaginatedList/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.2/AspNetCore.PaginatedList.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/AspNetCore.PaginatedList.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2513,6 +2522,18 @@
     }
   },
   "libraries": {
+    "AspNetCore.PaginatedList/6.0.0": {
+      "sha512": "D14nW49P9TKUX2JNKUtzn9Z6nF9liwm15cnZPM5uBeBxU0Q9T46iypmoiXZ+UeaEd/BVCc0lDs0OutBIbQTB4w==",
+      "type": "package",
+      "path": "aspnetcore.paginatedlist/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.paginatedlist.6.0.0.nupkg.sha512",
+        "aspnetcore.paginatedlist.nuspec",
+        "lib/netcoreapp2.2/AspNetCore.PaginatedList.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "sha512": "Y4rs5aMEXY8G7wJo5S3EEt6ltqyOTr/qOeZzfn+hw/fuQj5GppGckMY5psGLETo1U9hcT5MmAhaT5xtusM1b5g==",
       "type": "package",
@@ -8237,6 +8258,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AspNetCore.PaginatedList >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
@@ -8282,6 +8304,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AspNetCore.PaginatedList": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.4, )"

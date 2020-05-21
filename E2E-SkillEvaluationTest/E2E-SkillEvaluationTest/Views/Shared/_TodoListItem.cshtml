@@ -1,0 +1,24 @@
+﻿@model Todo
+
+<tr>
+    <th scope="row">@Model.Id</th>
+    <td>
+        @Html.ActionLink(Model.Title, "Details", "Todo", new { id = Model.Id }, null)
+    </td>
+    <td>
+        @if (Model.Completed)
+        {
+            <span class="badge badge-success">Finished</span>
+        }
+        else
+        {
+            <button type="button" class="btn btn-warning markFinished" value=@Model.Id>Mark as finished</button>
+        }
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", "Todo", new { id = Model.Id }, new { @class = "btn btn-primary", @style = "color:white", @role = "button" })
+    </td>
+    <td>
+        <button type="button" class="btn btn-danger delete" value=@Model.Id>Delete</button>
+    </td>
+</tr>

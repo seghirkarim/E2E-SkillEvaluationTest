@@ -113,5 +113,23 @@ namespace E2E_SkillEvaluationTest.Controllers
             }
         }
 
+        // GET: Todo/MarkFinished/5
+        [HttpGet]
+        public ActionResult MarkFinished(int id)
+        {
+            try
+            {
+                Todo entity = _context.Todos.Where(t => t.Id == id).FirstOrDefault();
+                entity.Completed = true;
+                _context.SaveChanges();
+
+                return RedirectToAction("Index", "Home");
+            }
+            catch
+            {
+                return RedirectToAction("Error", "Home");
+            }
+        }
+
     }
 }

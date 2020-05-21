@@ -210,8 +210,11 @@ C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-Skill
 C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\E2E-SkillEvaluationTest.csproj.CoreCompileInputs.cache
-C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\E2E-SkillEvaluationTest.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\Razor\Views\Todo\Create.cshtml.g.cs
 C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\Razor\Views\Todo\Edit.cshtml.g.cs
 C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\Razor\Views\Todo\Details.cshtml.g.cs
+C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TodoListItem.cshtml.g.cs
+C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\Razor\Views\Home\IndexManual.cshtml.g.cs
+C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\bin\Debug\netcoreapp3.1\AspNetCore.PaginatedList.dll
+C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\E2E-SkillEvaluationTest.csproj.CoreCompileInputs.cache
+C:\Users\Karim\Desktop\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\E2E-SkillEvaluationTest\obj\Debug\netcoreapp3.1\E2E-SkillEvaluationTest.MvcApplicationPartsAssemblyInfo.cache
