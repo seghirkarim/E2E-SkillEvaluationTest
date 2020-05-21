@@ -3,7 +3,7 @@
 This repository contains my solution for the E2E Skill Evaluation Test.
 The purpose of this application is a very simplistic To-do manager.
 
-I have created a solution using a datatable library; I also created another list using ASP.NET Core technology. This alternative list has no pagination.
+I have created a solution using a DataTable library and jQuery; I also created another list using ASP.NET Core technology. This alternative list has no pagination.
 
 I personally prefer the solution with the datatable (which has all requirements). It's is more elegant and simpler than the alternative solution. The alternative solution is accessible under the button 'alternative list'.
 
@@ -16,7 +16,7 @@ There are CRUD operations provided for the Todo model.
 
 ## Used libraries and packages
 
-**Database:** Local SQLServer
+**Database:** MSSQLLocalDB
 
 **DataTable:** 
   Website: https://datatables.net/
