@@ -1,0 +1,40 @@
+﻿@model List<Todo>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1 class="display-4">My To-do list</h1>
+<hr />
+<form asp-action="IndexManual" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="IndexManual">Back to Full List</a>
+        </p>
+    </div>
+</form>
+<table id="dataTable" class="table table-striped grid" style="min-width:100%">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="IndexManual" asp-route-sortOrder="@ViewData["IdSortParm"]">ID</a>
+            </th>
+            <th>
+                <a asp-action="IndexManual" asp-route-sortOrder="@ViewData["TitleSortParm"]">Title</a>
+            </th>
+            <th>
+                <a asp-action="IndexManual" asp-route-sortOrder="@ViewData["CompletedSortParm"]">Finished</a>
+            </th>
+            <th>
+            </th>
+            <th>@Html.ActionLink("Add To-do", "Create", "Todo", new { @class = "btn btn-primary", @style = "color:white", @role = "button" })</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            await Html.RenderPartialAsync("_TodoListItem", item);
+        }
+    </tbody>
+</table>
+

@@ -19,20 +19,23 @@ namespace E2E_SkillEvaluationTest.Controllers
             _context = context;
         }
 
-        // GET: Todo
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         // GET: Todo/Details/5
+        [HttpGet]
         public ActionResult Details(int id)
         {
-            List<Todo> todoList = _context.Todos.ToList();
-            return View("Detail", todoList.First(i => i.Id == id));
+            try
+            {
+                return View("Details", _context.Todos.ToList().First(i => i.Id == id));
+            }
+            catch
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
         }
 
         // GET: Todo/Create
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
@@ -47,19 +50,27 @@ namespace E2E_SkillEvaluationTest.Controllers
             {
                 _context.Todos.Add(new Todo { Title = collection["Title"], Completed = bool.Parse(collection["Completed"].First()) });
                 _context.SaveChanges();
-                return RedirectToAction("Index","Home");
+
+                return RedirectToAction("Index", "Home");
             }
             catch
             {
-                return View();
+                return RedirectToAction("Error", "Home");
             }
         }
 
         // GET: Todo/Edit/5
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            List<Todo> todoList = _context.Todos.ToList();
-            return View(todoList.First(i => i.Id == id));
+            try
+            {
+                return View(_context.Todos.ToList().First(i => i.Id == id));
+            }
+            catch
+            {
+                return RedirectToAction("Error", "Home");
+            }       
         }
 
         // POST: Todo/Edit/5
@@ -71,19 +82,15 @@ namespace E2E_SkillEvaluationTest.Controllers
             {
                 Todo entity = _context.Todos.Where(t => t.Id == id).FirstOrDefault();
 
-                if (entity != null)
-                {
-                    entity.Title = collection["Title"];
-                    entity.Completed = bool.Parse(collection["Completed"].First());
-                    var z = entity;
-                    _context.SaveChanges();
-                }
+                entity.Title = collection["Title"];
+                entity.Completed = bool.Parse(collection["Completed"].First());
+                _context.SaveChanges();
 
                 return Details(id);
             }
             catch
             {
-                return View();
+                return RedirectToAction("Error", "Home");
             }
         }
 
@@ -94,13 +101,15 @@ namespace E2E_SkillEvaluationTest.Controllers
             try
             {
                 Todo entity = _context.Todos.Where(t => t.Id == id).FirstOrDefault();
+
                 _context.Todos.Remove(entity);
                 _context.SaveChanges();
+
                 return RedirectToAction("Index", "Home");
             }
             catch
             {
-                return View();
+                return RedirectToAction("Error", "Home");
             }
         }
 
@@ -113,12 +122,14 @@ namespace E2E_SkillEvaluationTest.Controllers
                 Todo entity = _context.Todos.Where(t => t.Id == id).FirstOrDefault();
                 entity.Completed = true;
                 _context.SaveChanges();
-                return Ok();
+
+                return RedirectToAction("Index", "Home");
             }
             catch
             {
-                return View();
+                return RedirectToAction("Error", "Home");
             }
         }
+
     }
 }

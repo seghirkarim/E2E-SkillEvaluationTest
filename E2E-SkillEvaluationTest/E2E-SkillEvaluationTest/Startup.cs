@@ -48,7 +48,7 @@ namespace E2E_SkillEvaluationTest
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseStatusCodePages();
             app.UseRouting();
 
             app.UseAuthorization();
