@@ -13,12 +13,10 @@ namespace E2E_SkillEvaluationTest.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly TodoContext _context;
 
-        public HomeController(ILogger<HomeController> logger, TodoContext context)
+        public HomeController(TodoContext context)
         {
-            _logger = logger;
             _context = context;
         }
 

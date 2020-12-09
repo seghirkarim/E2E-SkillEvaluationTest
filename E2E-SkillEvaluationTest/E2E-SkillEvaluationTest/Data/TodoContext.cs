@@ -19,11 +19,6 @@ namespace E2E_SkillEvaluationTest.Data
         {
         }
 
-        public TodoContext()
-        {
-
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             foreach (var item in Seeder.GetSeedDataAsync().Result)
